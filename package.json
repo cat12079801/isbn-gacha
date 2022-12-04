@@ -1,0 +1,10 @@
+{
+  "name": "isbn-gacha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cat12079801 <cat12079801@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

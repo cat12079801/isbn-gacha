@@ -16,17 +16,17 @@
  * 例えば「岩波書店」を表す出版社記号は「00」
  */
 export function generateRandomIsbn(): string {
-    return "";
+  return "";
 }
 
 export function selectRandomPublisherSymbol(): string {
-    return "";
+  return "";
 }
 
 export function generateRandomBookTitleSymbol(digits: number): string {
-    return "";
+  return "";
 }
 
 export function calculateCheckDigit(target: string): string {
-    return "";
+  return "";
 }

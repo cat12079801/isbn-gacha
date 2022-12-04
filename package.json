@@ -5,6 +5,7 @@
   "author": "cat12079801 <cat12079801@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.3"
   }
 }

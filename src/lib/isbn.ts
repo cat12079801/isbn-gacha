@@ -19,7 +19,12 @@ export function generateRandomIsbn(): string {
   return "";
 }
 
-export function selectRandomPublisherSymbol(): string {
+/**
+ * 出版社記号を取得するハードルは低く、全出版社記号からランダムに返すことはできない
+ * そのため著名なものであると仮定した出版社記号2桁と3桁の中からランダムに選択肢返却する
+ * ref. * https://isbn.jpo.or.jp/doc/08.pdf#page=35
+ */
+export function selectFamousPublisherSymbol(): string {
   return "";
 }
 

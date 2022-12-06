@@ -4,6 +4,10 @@ test("ランダムなISBNを生成", () => {
   expect(isbn.generateRandomIsbn()).toMatch(/^978-4-[\d-]{10}-\d$/);
 });
 
+test("ランダムな出版社記号+書籍記号を生成", () => {
+  expect(isbn.generateRandomPublisherSymbolAndBookTitleSymbol()).toMatch(/^\d{8}$/);
+})
+
 test("著名な出版社記号を選択", () => {
   expect(isbn.selectFamousPublisherSymbol()).toMatch(/^([01]\d|[2-6]\d\d)$/);
 });

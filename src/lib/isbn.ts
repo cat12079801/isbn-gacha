@@ -20,6 +20,13 @@ export function generateRandomIsbn(): string {
 }
 
 /**
+ * 出版社記号と書籍記号をあわせた8桁のランダムな数値文字列を返却する
+ */
+export function generateRandomPublisherSymbolAndBookTitleSymbol(): string {
+  return "";
+}
+
+/**
  * 出版社記号を取得するハードルは低く、全出版社記号からランダムに返すことはできない
  * そのため著名なものであると仮定した出版社記号2桁と3桁の中からランダムに選択肢返却する
  * ref. * https://isbn.jpo.or.jp/doc/08.pdf#page=35

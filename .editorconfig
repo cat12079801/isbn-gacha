@@ -31,3 +31,8 @@ insert_final_newline = true
 insert_final_newline = false
 trim_trailing_whitespace = false
 
+#----------------------------------------------------------------------
+# YAML
+#----------------------------------------------------------------------
+[*.{yaml,yml}]
+indent_size = 2

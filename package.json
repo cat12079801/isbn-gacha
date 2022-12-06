@@ -8,6 +8,7 @@
     "build": "tsc",
     "lint": "eslint --fix '{src,tests}/**/*.{ts,js}'",
     "format": "prettier --write '{src,tests}/**/*.{ts,js}'",
+    "format:ci": "prettier --check '{src,tests}/**/*.{ts,js}'",
     "test": "jest"
   },
   "devDependencies": {

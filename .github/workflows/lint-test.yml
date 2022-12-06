@@ -16,9 +16,9 @@ jobs:
       - name: Install
         run: yarn install
       - name: Lint
-        run: yarn run lint
+        run: yarn lint
       - name: Format
-        run: yarn run format
+        run: yarn format:ci
 
   test:
     runs-on: ${{ matrix.os }}

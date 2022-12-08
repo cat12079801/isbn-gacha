@@ -16,7 +16,8 @@
  * 例えば「岩波書店」を表す出版社記号は「00」
  */
 export function generateRandomIsbn(): string {
-  const publisherAndBookTitleSymbol = generateRandomPublisherSymbolAndBookTitleSymbol();
+  const publisherAndBookTitleSymbol =
+    generateRandomPublisherSymbolAndBookTitleSymbol();
   const checkDigit = calculateCheckDigit(`9784${publisherAndBookTitleSymbol}`);
   return `9784${publisherAndBookTitleSymbol}${checkDigit}`;
 }
@@ -48,7 +49,7 @@ export function generateRandomBookTitleSymbol(digits: number): string {
  */
 export function calculateCheckDigit(target: string): string {
   let sum = 0;
-  target.split('').forEach((value, index) => {
+  target.split("").forEach((value, index) => {
     if (index % 2 === 0) {
       sum += parseInt(value) * 3;
     } else {
@@ -60,7 +61,7 @@ export function calculateCheckDigit(target: string): string {
   if (sumLastDigit === 0) {
     return "0";
   } else {
-    return String(10 -sumLastDigit);
+    return String(10 - sumLastDigit);
   }
 }
 
@@ -69,5 +70,5 @@ export function calculateCheckDigit(target: string): string {
  * @param digits
  */
 function getRandomNumberString(digits: number): string {
-  return String(Math.floor(Math.random() * (10 ** digits))).padStart(digits, '0');
+  return String(Math.floor(Math.random() * 10 ** digits)).padStart(digits, "0");
 }

@@ -10,6 +10,6 @@ export async function getFromOpenbd(isbn: string): Promise<string | null> {
       if (data[0] === null) {
         return null;
       }
-      return data[0]['summary']['title'];
+      return data[0]["summary"]["title"];
     });
 }

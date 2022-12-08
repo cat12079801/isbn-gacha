@@ -1,7 +1,7 @@
 import * as isbn from "../isbn";
 
 test("ランダムなISBNを生成", () => {
-  expect(isbn.generateRandomIsbn()).toMatch(/^978-4-[\d-]{10}-\d$/);
+  expect(isbn.generateRandomIsbn()).toMatch(/^9784[\d]{9}$/);
 });
 
 test("ランダムな出版社記号+書籍記号を生成", () => {
@@ -36,11 +36,11 @@ describe("ランダムな書名記号を生成", () => {
 });
 
 describe("チェックディジットの確認", () => {
-  test("978-4-10-109205", () => {
-    expect(isbn.calculateCheckDigit("978-4-10-109205")).toBe("8");
+  test("978410109205", () => {
+    expect(isbn.calculateCheckDigit("978410109205")).toBe("8");
   });
 
-  test("000-0-00-000000", () => {
-    expect(isbn.calculateCheckDigit("000-0-00-000000")).toBe("0");
+  test("000000000000", () => {
+    expect(isbn.calculateCheckDigit("000000000000")).toBe("0");
   });
 });

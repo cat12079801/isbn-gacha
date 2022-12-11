@@ -11,6 +11,9 @@
     "format:ci": "prettier --check '{src,tests}/**/*.{ts,js}'",
     "test": "jest"
   },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.3",
     "@typescript-eslint/eslint-plugin": "^5.45.0",

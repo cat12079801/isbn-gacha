@@ -8,10 +8,15 @@ const main = async () => {
 
   while (retryCount++ < MAX_RETRY_COUNT) {
     const isbn = generateRandomIsbn();
-    const bookTitle = await getFromOpenbd(isbn);
-    if (bookTitle) {
-      console.log(`isbn: ${isbn}`);
-      console.log(`title: ${bookTitle}`);
+
+    try {
+      const bookTitle = await getFromOpenbd(isbn);
+      if (bookTitle) {
+        console.log(`isbn: ${isbn}`);
+        console.log(`title: ${bookTitle}`);
+        return;
+      }
+    } catch (_) {
       return;
     }
   }

@@ -1,9 +1,14 @@
 {
   "name": "isbn-gacha",
   "version": "1.0.0",
+  "description": "Command to print random books.",
   "main": "index.js",
   "author": "cat12079801 <cat12079801@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "isbn",
+    "gacha"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "eslint --fix '{src,tests}/**/*.{ts,js}'",

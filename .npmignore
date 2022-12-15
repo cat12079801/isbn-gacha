@@ -1,0 +1,4 @@
+*.log
+.cache
+__tests__
+node_modules/
